@@ -14,6 +14,7 @@ datablock fxDTSBrickData ( brickDoorBoomBarrierOpenCWData )
 	
 	isDoor = 1;
 	isOpen = 1;
+	noBrickSounds = true;
 	
 	closedCW = "brickDoorBoomBarrierCWData";
 	openCW = "brickDoorBoomBarrierOpenCWData";
@@ -55,6 +56,7 @@ datablock fxDTSBrickData ( brickDoorTargetVerticalOpenCWData )
 	
 	isDoor = 1;
 	isOpen = 1;
+	noBrickSounds = true;
 	
 	closedCW = "brickDoorTargetVerticalCWData";
 	openCW = "brickDoorTargetVerticalOpenCWData";
@@ -84,6 +86,7 @@ datablock fxDTSBrickData ( brickDoorTargetHorizontalOpenCWData )
 	
 	isDoor = 1;
 	isOpen = 1;
+	noBrickSounds = true;
 	
 	closedCW = "brickDoorTargetHorizontalCWData";
 	openCW = "brickDoorTargetHorizontalOpenCWData";
@@ -113,6 +116,7 @@ datablock fxDTSBrickData ( brickDoorPistonHorizontalOpenCWData )
 	
 	isDoor = 1;
 	isOpen = 1;
+	noBrickSounds = true;
 	
 	closedCW = "brickDoorPistonHorizontalCWData";
 	openCW = "brickDoorPistonHorizontalOpenCWData";
@@ -142,6 +146,7 @@ datablock fxDTSBrickData ( brickDoorPistonVerticalOpenCWData )
 	
 	isDoor = 1;
 	isOpen = 1;
+	noBrickSounds = true;
 	
 	closedCW = "brickDoorPistonVerticalCWData";
 	openCW = "brickDoorPistonVerticalOpenCWData";
@@ -171,6 +176,7 @@ datablock fxDTSBrickData ( brickDoorPistonHorizontal2xOpenCWData )
 	
 	isDoor = 1;
 	isOpen = 1;
+	noBrickSounds = true;
 	
 	closedCW = "brickDoorPistonHorizontal2xCWData";
 	openCW = "brickDoorPistonHorizontal2xOpenCWData";
@@ -187,4 +193,34 @@ datablock fxDTSBrickData ( brickDoorPistonHorizontal2xCWData : brickDoorPistonHo
 	category = "Special";
 	subCategory = "Doors";
 	iconName = "Add-Ons/Brick_Doors_Misc/resources/piston/piston_horizontal_2x";
+};
+
+
+
+//Piston Vertical 2x
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+datablock fxDTSBrickData ( brickDoorPistonVertical2xOpenCWData )
+{
+	brickFile = "./resources/piston/piston_vertical_2x_open.blb";
+	uiName = "Piston 2x Vertical";
+	
+	isDoor = 1;
+	isOpen = 1;
+	noBrickSounds = true;
+	
+	closedCW = "brickDoorPistonVertical2xCWData";
+	openCW = "brickDoorPistonVertical2xOpenCWData";
+	
+	closedCCW = "brickDoorPistonVertical2xCWData";
+	openCCW = "brickDoorPistonVertical2xOpenCWData";
+};
+
+datablock fxDTSBrickData ( brickDoorPistonVertical2xCWData : brickDoorPistonVertical2xOpenCWData )
+{
+	brickFile = "./resources/piston/piston_vertical_2x_closed.blb";
+	isOpen = 0;
+
+	category = "Special";
+	subCategory = "Doors";
+	iconName = "Add-Ons/Brick_Doors_Misc/resources/piston/piston_vertical_2x";
 };
