@@ -108,8 +108,8 @@ datablock fxDTSBrickData ( brickDoorTargetHorizontalCWData : brickDoorTargetHori
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 datablock fxDTSBrickData ( brickDoorPistonHorizontalOpenCWData )
 {
-	brickFile = "./resources/piston/piston_horizontal_open.blb";
-	uiName = "Piston (Horizontal)";
+	brickFile = "./resources/piston/piston_horizontal_1x_open.blb";
+	uiName = "Piston 1x Horizontal";
 	
 	isDoor = 1;
 	isOpen = 1;
@@ -123,12 +123,41 @@ datablock fxDTSBrickData ( brickDoorPistonHorizontalOpenCWData )
 
 datablock fxDTSBrickData ( brickDoorPistonHorizontalCWData : brickDoorPistonHorizontalOpenCWData )
 {
-	brickFile = "./resources/piston/piston_horizontal_closed.blb";
+	brickFile = "./resources/piston/piston_horizontal_1x_closed.blb";
 	isOpen = 0;
 
 	category = "Special";
 	subCategory = "Doors";
-	iconName = "Add-Ons/Brick_Doors_Misc/resources/piston/piston_horizontal";
+	iconName = "Add-Ons/Brick_Doors_Misc/resources/piston/piston_horizontal_1x";
+};
+
+
+
+//Piston Vertical
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+datablock fxDTSBrickData ( brickDoorPistonVerticalOpenCWData )
+{
+	brickFile = "./resources/piston/piston_vertical_1x_open.blb";
+	uiName = "Piston 1x Vertical";
+	
+	isDoor = 1;
+	isOpen = 1;
+	
+	closedCW = "brickDoorPistonVerticalCWData";
+	openCW = "brickDoorPistonVerticalOpenCWData";
+	
+	closedCCW = "brickDoorPistonVerticalCWData";
+	openCCW = "brickDoorPistonVerticalOpenCWData";
+};
+
+datablock fxDTSBrickData ( brickDoorPistonVerticalCWData : brickDoorPistonVerticalOpenCWData )
+{
+	brickFile = "./resources/piston/piston_vertical_1x_closed.blb";
+	isOpen = 0;
+
+	category = "Special";
+	subCategory = "Doors";
+	iconName = "Add-Ons/Brick_Doors_Misc/resources/piston/piston_vertical_1x";
 };
 
 
@@ -138,7 +167,7 @@ datablock fxDTSBrickData ( brickDoorPistonHorizontalCWData : brickDoorPistonHori
 datablock fxDTSBrickData ( brickDoorPistonHorizontal2xOpenCWData )
 {
 	brickFile = "./resources/piston/piston_horizontal_2x_open.blb";
-	uiName = "Piston 2x (Horizontal)";
+	uiName = "Piston 2x Horizontal";
 	
 	isDoor = 1;
 	isOpen = 1;
@@ -159,5 +188,3 @@ datablock fxDTSBrickData ( brickDoorPistonHorizontal2xCWData : brickDoorPistonHo
 	subCategory = "Doors";
 	iconName = "Add-Ons/Brick_Doors_Misc/resources/piston/piston_horizontal_2x";
 };
-
-
